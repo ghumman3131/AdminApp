@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#82df89f5">
+
+<EditText
+    android:id="@+id/adminEt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@null"
+
+    android:hint="adminName"
+    android:inputType="textEmailAddress"
+    android:textSize="25dp" />
+
+<EditText
+    android:id="@+id/passEt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/adminEt"
+    android:layout_margin="10dp"
+    android:background="@null"
+    android:hint="password"
+    android:inputType="textPassword"
+    android:textSize="25dp" />
+
+<CheckBox
+    android:id="@+id/checkbox_first"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/passEt"
+    android:layout_gravity="clip_horizontal"
+    android:layout_margin="10dp"
+    android:buttonTint="#0f0f0f" />
+
+<TextView
+    android:id="@+id/rememberTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/checkbox_first"
+    android:text="Remember me"
+    android:textColor="#000"
+    android:textSize="20dp" />
+
+<Button
+    android:id="@+id/loginBt"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rememberTv"
+    android:text="login" />
+
+
+</RelativeLayout>
+
